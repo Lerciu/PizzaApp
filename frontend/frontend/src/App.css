@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+/* Stylowanie dla formularza zamówienia i listy pizz */
+.order-form-container, .pizza-list-container {
+  flex: 1;
+}
+
+/* Dodane style dla układu głównego zawartości i koszyka */
+.main-content {
+  display: flex;
+  justify-content: center; /* Centruje content, jeśli potrzebujesz innej orientacji, zmień na 'space-between' */
+  padding-top: 60px; /* Dodaje trochę przestrzeni na górze */
+}
+
+.pizza-list {
+  flex: 1; /* Pizza list zajmuje dostępną przestrzeń, ale pozwala na przestrzeń dla koszyka */
+  padding-right: 10px; /* Zapewnia odstęp między listą a koszykiem */
+}
+
+.cart {
+  width: 300px; /* Możesz dostosować szerokość */
+  position: sticky;
+  top: 60px; /* Wysokość nagłówka */
+  height: calc(100vh - 60px); /* Wysokość ekranu minus wysokość nagłówka */
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  border-left: 1px solid #ddd;
+  padding: 60px;
+}
+
+
+/* Reszta niezmienionych stylów */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; /* Usunięte, aby pozwolić na inny układ */
+  /* Usunięte flex-direction i justify-content, aby nie kolidowały z nowym układem */
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

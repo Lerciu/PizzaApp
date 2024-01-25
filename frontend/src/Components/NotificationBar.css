@@ -1,0 +1,18 @@
+/* NotificationBar.css */
+.notification-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100px; /* Początkowo ukryty */
+    background: #333; /* Ciemne tło */
+    color: #fff; /* Biały tekst */
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.5s; /* Animacja */
+    z-index: 1000; /* Upewnij się, że powiadomienie jest na wierzchu */
+  }
+  
+  .notification-bar.show {
+    bottom: 0; /* Przesuwa powiadomienie, aby było widoczne */
+  }
+  

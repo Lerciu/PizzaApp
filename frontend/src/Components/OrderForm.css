@@ -1,0 +1,31 @@
+/* OrderForm.css */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .order-form input[type="text"],
+  .order-form input[type="email"],
+  .order-form button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .order-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .order-form button:hover {
+    background-color: #0056b3;
+  }
+  

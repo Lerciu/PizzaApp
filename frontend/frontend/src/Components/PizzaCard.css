@@ -1,0 +1,69 @@
+.pizza-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin: 16px;
+    width: 300px; /* lub użyj flexbox/grid do zarządzania szerokością */
+  }
+  
+  .pizza-image {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    height: 200px; /* ustaw wysokość, aby obrazy były jednolite */
+  }
+  
+  .price {
+    color: #FFA500; /* oranżowy kolor dla ceny */
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-btn {
+    background-color: #FFA500; /* oranżowy kolor tła dla przycisku */
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #cc8400;
+  }
+  
+  .quantity {
+    padding: 5px 10px;
+    font-size: 1.2em;
+  }
+  
+  .add-to-cart {
+    background-color: #FFA500; /* oranżowy kolor tła dla przycisku */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #cc8400;
+  }
+  
+  .sold-out {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
